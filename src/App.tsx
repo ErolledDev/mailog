@@ -9,6 +9,7 @@ import Features from './pages/Features';
 import NotFound from './pages/NotFound';
 import FAQ from './pages/FAQ';
 import Blog from './pages/Blog/Blog';
+import ProtectPrivacyPost from './pages/Blog/protect-privacy-with-temp-mail';
 import PWAPrompt from './components/PWAPrompt';
 
 const Home: React.FC = () => {
@@ -268,6 +269,7 @@ const App: React.FC = () => {
             <Route path="/terms" element={<Terms />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/protect-privacy-with-temp-mail" element={<ProtectPrivacyPost />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
