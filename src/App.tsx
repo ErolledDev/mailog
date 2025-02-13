@@ -8,6 +8,7 @@ import About from './pages/About';
 import Features from './pages/Features';
 import NotFound from './pages/NotFound';
 import FAQ from './pages/FAQ';
+import Blog from './pages/Blog/Blog';
 import PWAPrompt from './components/PWAPrompt';
 
 const Home: React.FC = () => {
@@ -266,6 +267,7 @@ const App: React.FC = () => {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
@@ -292,6 +294,7 @@ const App: React.FC = () => {
                 <ul className="space-y-3 text-sm">
                   <li><Link to="/features" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Features</Link></li>
                   <li><Link to="/about" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">About</Link></li>
+                  <li><Link to="/blog" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Blog</Link></li>
                   <li><Link to="/faq" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">FAQ</Link></li>
                 </ul>
               </div>
@@ -300,6 +303,7 @@ const App: React.FC = () => {
                 <ul className="space-y-3 text-sm">
                   <li><Link to="/privacy" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Privacy Policy</Link></li>
                   <li><Link to="/terms" className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">Terms of Service</Link></li>
+                  <li><a href='https://www.guerrillamail.com' className="text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white">API</a></li>
                 </ul>
               </div>
               <div>
